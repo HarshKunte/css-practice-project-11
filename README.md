@@ -11,7 +11,7 @@
 ## Go check it out live👉[here](https://pro-hosting.netlify.app/)
 ---
 ### This is how it looks 👀
-![Preview](./output.png)
+![Preview](./output1.png)
 
 
 It took 6hrs to complete this masterpiece.😮‍💨
