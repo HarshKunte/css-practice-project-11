@@ -20,7 +20,9 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-
+.hamburger{
+    display: none;
+}
 .list{
     display: flex;
     list-style-type: none;
@@ -377,4 +379,216 @@ footer{
 }
 .social-icon{
     margin:0 0.2rem;
+}
+
+@media screen and (max-width:768px){
+    ul.list{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav{
+        padding: 1.5rem 3rem;
+    }
+    .header {
+        padding: 1.5rem 3.5rem 2rem 4rem;
+    }
+    .content .title {
+        font-size: 2.2rem;
+        color: #14263f;
+    }
+    .header-one .image{
+        justify-content: flex-end;
+    }
+    .header-two .image{
+        justify-content: flex-start;
+    }
+    .content>button{
+        width: 12rem;
+    }
+    .content .info {
+        margin: 1rem 0;
+    }
+    .image>img {
+        object-fit: contain;
+    }
+    .services{
+        padding: 5rem 4rem;
+    }
+    .services-title {
+        font-size: 2.5rem;
+    }
+    .services-cards{
+        justify-content: center;
+    }
+    .services-cards .card {
+        width: 45%;
+        margin: 0 1rem 1rem 0;
+        padding: 1rem;
+    }
+    .pricing{
+        padding: 4rem;
+    }
+    .pricing-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pricing-card{
+        width: 45%;
+    }
+    .pricing-card>div {
+        padding: 1rem 1.5rem;
+    }
+    .pricing-feature {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #14263f;
+        display: flex;
+        align-items: center;
+    }
+    .pricing-features {
+        margin: 0.5rem 0 2rem 0;
+    }
+    .price{
+        margin-bottom: 0.5rem;
+    }
+    .cancel-anytime{
+        margin-bottom: 1rem;
+    }
+    .choose-plan{
+        padding: 0.7rem 1rem;
+    }
+    .feedback {
+        padding: 4rem 2.5rem 3rem 2.5rem;
+    }
+    .feedback-info{
+        width: 100%;
+    }
+    .blue-banner{
+        padding: 3rem 3rem;
+    }
+    .blue-banner-content{
+        padding: 0rem;
+        width: 100%;
+    }
+    .blue-banner-heading{
+        font-size: 2rem;
+        padding: 0;
+    }
+    footer{
+        padding: 3rem 2.5rem;
+        flex-wrap: wrap;
+    }
+    .footer-list{
+        margin-right: 1.2rem;
+    }
+    .footer-list-item {
+        margin-bottom: 0.5rem;
+
+    }
+}
+
+@media screen and (max-width:450px){
+    .content{
+        width: 100%;
+    }
+    .header .image{
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+    .header{
+        flex-wrap: wrap;
+        padding: 1.5rem 2.5rem;
+    }
+    nav{
+        padding: 1.5rem 2.5rem;
+    }
+    .content .title{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services{
+        padding: 1.5rem 2.5rem;
+    }
+    .services-info{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .services-title,.services-small-text{
+        width: 100%;
+    }
+    .services-title{
+        font-size: 2rem;
+    }
+    .services-cards .card{
+        width: 100%;
+    }
+    .pricing{
+        padding: 1.5rem 2.5rem;
+        text-align: center;
+    }
+    .pricing-title{
+        font-size: 2rem;
+    }
+    .pricing-card{
+        width: 100%;
+    }
+    .feedback{
+        padding: 1.5rem 2.5rem;
+    }
+    .feedback-card{
+        width: 100%;
+    }
+    .blue-banner{
+        flex-wrap: wrap;
+    }
+    .blue-banner .register{
+        margin-top: 0.5rem;
+    }
+    .logo-and-info{
+        margin-bottom: 0.5rem;
+    }
+    .social-media {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social-icon{
+        margin: 0;
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    nav, .header, .services, .pricing, .feedback{
+        padding: 1rem;
+    }
+    footer{
+        padding: 1.5rem;
+    }
+    .feedback-user-profile{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+    }
+    .feedback-card{
+        padding: 1rem;
+    }
+    .blue-banner{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    .blue-banner-content{
+        text-align: center;
+    }
 }
